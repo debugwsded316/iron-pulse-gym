@@ -1,0 +1,95 @@
+.membership-section {
+  padding: 80px 0;
+  background-color: #1a1a1a;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.plan-card {
+  background: #2d2d2d;
+  padding: 40px 30px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  border-color: #dc2626;
+}
+
+.plan-card.popular {
+  border: 2px solid #dc2626;
+  transform: scale(1.05);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #dc2626;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.plan-card h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.price {
+  margin-bottom: 30px;
+}
+
+.currency {
+  color: #dc2626;
+  font-size: 1.5rem;
+  vertical-align: top;
+}
+
+.amount {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0 5px;
+}
+
+.period {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.features li {
+  color: #9ca3af;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid #444;
+}
+
+.features li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .plan-card.popular {
+    transform: scale(1);
+  }
+}
